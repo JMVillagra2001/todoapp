@@ -5,7 +5,7 @@ import './Login.css'
 export default function Login() {
     const [Username, setUsername] = useState("")
     const [Password, setPassword] = useState("")
-    const { login, isLoading, hasError, isRegistered } = UseAuth()
+    const { login, isLoading, hasError } = UseAuth()
 
     const handleSumbmit = (e) => {
         e.preventDefault()
@@ -26,7 +26,6 @@ export default function Login() {
                 value={Password} />
             {isLoading && <strong>Loading</strong>}
             {!isLoading && hasError && <strong className="error">Credentials are invalid!</strong>}
-            {!isLoading && isRegistered && <strong className="error">Successful registration!</strong>}
             <button>Login</button>
         </form>
 

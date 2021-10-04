@@ -6,13 +6,12 @@ export default function Register() {
     const [Username, setUsername] = useState("")
     const [Password, setPassword] = useState("")
     const [ConfirmPassword, setConfirmPassword] = useState("")
-    const { register, isLoading, hasError } = UseAuth()
+    const { register, isLoading, hasError, isRegistered } = UseAuth()
 
     const handleSumbmit = (e) => {
         e.preventDefault()
         if(Password === ConfirmPassword) register({ Username, Password })
         else alert("Credentials are diferents!")
-        
     }
 
     return (
@@ -35,6 +34,7 @@ export default function Register() {
             <button>Register</button>
             {isLoading && <strong>Loading</strong>}
             {!isLoading && hasError && <strong className="error">Credentials are invalid!</strong>}
+            {!isLoading && isRegistered && <strong className="error">Successful registration!</strong>}
         </form>
 
     )
