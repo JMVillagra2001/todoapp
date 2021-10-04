@@ -1,0 +1,39 @@
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    font-size: 36px;
+    margin: 16px;
+}
+
+button{
+    margin: 16px;
+    padding: 12px 20px;
+    width: 100%;
+    background: none;
+    border: #000 1px solid;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #000;
+}
+
+input{
+    margin: 8px;
+    padding: 12px;
+    background:none;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-size: 18px;
+
+}

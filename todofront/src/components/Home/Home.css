@@ -1,0 +1,15 @@
+.center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 56px;
+    color: #EFEFEF;
+    margin: 16px;
+}

@@ -1,0 +1,30 @@
+header {
+    width: 100%;
+    height: 60px;
+    background: #0C3040;
+}
+
+header .wrap {
+    width: calc(100% - 20px);
+    max-width: 1360px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .wrap .start{
+    display: flex;
+    float: left;
+    height: 100%;
+}
+
+header .wrap .end{
+    display: flex;
+    float: right;
+    height: 100%;
+}
+a {
+    color: #EFEFEF;
+    text-decoration: none;
+    margin: auto 8px;
+}
